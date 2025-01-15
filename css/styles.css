@@ -1,0 +1,37 @@
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header section */
+  header {
+    background-color: #444; /* dark gray */
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  /* Main content area */
+  main {
+    padding: 1rem;
+  }
+  
+  /* Footer section */
+  footer {
+    background-color: #444; /* same as header for consistency */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  
