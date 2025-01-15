@@ -1,37 +1,76 @@
-/* Reset default margins/padding */
-* {
+/* Animated background example */
+body {
+    background: linear-gradient(-45deg, #333, #555, #777, #999);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body styling */
-  body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    color: #fff;
   }
   
-  /* Header section */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Navigation */
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
   header {
-    background-color: #444; /* dark gray */
-    color: #fff;
-    padding: 1rem;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
   }
   
-  /* Main content area */
-  main {
-    padding: 1rem;
+  /* Sections */
+  section {
+    padding: 2rem 1rem;
+    margin: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
   }
   
-  /* Footer section */
+  /* Footer */
   footer {
-    background-color: #444; /* same as header for consistency */
-    color: #fff;
     text-align: center;
     padding: 1rem;
-    position: absolute;
-    width: 100%;
-    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .project-card {
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
   }
   
